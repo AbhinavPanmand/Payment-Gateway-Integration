@@ -25,7 +25,7 @@
 
     <!-- All in One SEO 4.1.1.1 -->
     <meta name="description" content="Your donation will help CRY provide education to underprivileged children across India. Donate to CRY NGO online and help bring about a lasting change." />
-    <link rel="canonical" href="https://www.cry.org/donation/" />
+    <!-- <link rel="canonical" href="https://www.cry.org/donation/" /> -->
 
     <link rel='dns-prefetch' href='//www.google.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
@@ -869,7 +869,7 @@ li.a{
 
                                 <div class="donate-form-options selected" data-val="one-time">
                                     <div class="donate-form-option ">
-                                        <span class="donate-form-amount" data-amount-val="3600"><em>₹</em><i class="donate-form-val">3600</i></span>
+                                        <span class="donate-form-amount"  data-amount-val="3600"><em>₹</em><i class="donate-form-val">3600</i></span>
                                         <p class="donate-form-info">Ensure regular vaccinations for 5 children against preventable deadly diseases</p>
                                     </div>
                                     <div class="donate-form-option selected">
@@ -921,7 +921,7 @@ li.a{
                                     <div class="donate-form-option donate-form-field">
                                         <div class="form-field-wrapper">
                                             <span class="form-field-converted" data-amount-val=""></span>
-                                            <input type="number" class="form-field" data-type="text" placeholder="Other Amount" />
+                                            <input type="number" id="amountdonated" class="form-field" data-type="text" placeholder="Other Amount" />
                                             <label class="other-amount">₹</label>
                                         </div>
                                         <span class="donate-form-field-label">Other Amount</span>
@@ -952,7 +952,7 @@ li.a{
                     -->
                         <div class="donate-step">
                             <div class="donation-review-amount">
-                                <h3 class="selected-donation-amount"><em>₹</em><span></span></h3>
+                                <h3 class="selected-donation-amount" id="amt"><em>₹</em><span></span></h3>
                                 <span class="selected-donation-frequency"></span>
                             </div>
                             <span class="donate-form-options-title">
@@ -966,6 +966,7 @@ li.a{
                                         <ul></ul>
                                     </div>
                                     <form action="/donation/#wpcf7-f370-p2543-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+                                    
                                         <div style="display: none;">
                                             <input type="hidden" name="_wpcf7" value="370" />
                                             <input type="hidden" name="_wpcf7_version" value="5.4" />
@@ -1076,7 +1077,7 @@ li.a{
                                             <input type="hidden" name="me-region" value="" class="wpcf7-form-control wpcf7-hidden" id="me-region" />
                                             <input type="hidden" name="donationpageurl" value="" class="wpcf7-form-control wpcf7-hidden" id="donation-page-url" />
                                         </div>
-                                        <button class="btn btn-primary" onclick="showDonateTab(3)"><i class="fa fa-heart"></i>Continue to Payement</button>
+                                        <button class="btn btn-primary" value= "click" onclick=" myFunction(); showDonateTab(3);"><i class="fa fa-heart"></i>Continue to Payement</button>
                                         <input type='hidden' class='wpcf7-pum' value='{"closepopup":false,"closedelay":0,"openpopup":false,"openpopup_id":0}' />
                                         <div class="wpcf7-response-output" aria-hidden="true"></div>
                                     </form>
@@ -1091,6 +1092,7 @@ li.a{
                         * recurring and single payments by querying the
                         * database and table
                     -->
+                    
                         <div class="donate-step">
                             <div class="donation-review-amount">
                                 <h3 class="selected-donation-amount"><em>₹</em><span></span></h3>
@@ -1135,6 +1137,7 @@ li.a{
                             <button class="btn btn-primary btn-donate"><i class="fa fa-lock"></i><a href="ProcessPayment.html">Continue To Payment</button></a>
 
                         </div>
+                    
 
 
                     </div>
@@ -1632,13 +1635,13 @@ li.a{
         });
     </script>
     <script type='text/javascript' src='https://www.cry.org/wp-includes/js/dist/api-fetch.min.js?ver=a783d1f442d2abefc7d6dbd156a44561' id='wp-api-fetch-js'></script>
-    <script type='text/javascript' id='wp-api-fetch-js-after'>
+    <!-- <script type='text/javascript' id='wp-api-fetch-js-after'>
         wp.apiFetch.use(wp.apiFetch.createRootURLMiddleware("https://www.cry.org/wp-json/"));
         wp.apiFetch.nonceMiddleware = wp.apiFetch.createNonceMiddleware("de8ccc2d1e");
         wp.apiFetch.use(wp.apiFetch.nonceMiddleware);
         wp.apiFetch.use(wp.apiFetch.mediaUploadMiddleware);
         wp.apiFetch.nonceEndpoint = "https://www.cry.org/wp-admin/admin-ajax.php?action=rest-nonce";
-    </script>
+    </script> -->
     <script type='text/javascript' id='contact-form-7-js-extra'>
         /* <![CDATA[ */
         var wpcf7 = {
@@ -1831,31 +1834,7 @@ li.a{
     </script>
     <script type='text/javascript' src='https://www.cry.org/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=4.6.2' id='ivory-search-scripts-js'></script>
     <script type='text/javascript' src='https://www.cry.org/wp-includes/js/wp-embed.min.js?ver=64759880d395fefb9028d8c2dda863b4' id='wp-embed-js'></script>
-    <!-- Google Tag Manager (noscript) -->
 
-    <!-- <noscript><iframe 
-
-height="0" width="0" style="display:none;visibility:hidden" data-src="https://www.googletagmanager.com/ns.html?id=GTM-WJ7X5JC" class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></iframe></noscript>-->
-
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Google Code for Remarketing Tag -->
-
-    <!-- <script type="text/javascript">
-/* <![CDATA[ */
-var google_conversion_id = 991193911;
-var google_custom_params = window.google_tag_params;
-var google_remarketing_only = true;
-/* ]]> */
-</script>-->
-
-    <!-- <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script> -->
-
-    <!-- <noscript>
-<div style="display:inline;">
-<img height="0" width="0" style="border-style:none;display:none; visibility: hidden;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/991193911/?guid=ON&amp;script=0" />
-</div>
-</noscript> -->
     <script>
         document.onkeydown = function(e) {
             if (e.keyCode == 123) {
@@ -1951,6 +1930,34 @@ var google_remarketing_only = true;
             scrollTop: $(".donate-form-block").offset().top
         }, 2000);
     });
+
 </script>
+
+<script>
+    function myFunction() {
+        var fname = document.getElementById('first-name').value
+        var lname = document.getElementById('last-name').value
+        var email = document.getElementById('email').value
+        var phoneno = document.getElementById('phone-number').value
+        var amountdonated = document.getElementsByClassName("selected-donation-amount")[0].innerText
+
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); 
+        var yyyy = today.getFullYear();
+
+        today = mm + '/' + dd + '/' + yyyy;
+
+        localStorage.setItem("date", today);
+        localStorage.setItem('firstName', fname);   
+        localStorage.setItem('lastName', lname);        
+        localStorage.setItem('email', email);     
+        localStorage.setItem('phoneno',phoneno);  
+        localStorage.setItem('amountdonated',amountdonated);
+
+    }
+</script>
+ 
+
 </body>
 </html>

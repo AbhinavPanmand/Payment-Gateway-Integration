@@ -6624,7 +6624,7 @@ body div#poweredbybilldesk {
     height: 60px;
     background-color: #e60000;
     *background-color: #f4f4f4;
-    _background-color: #f4f4f4
+    _background-color: #f4f4f4;
 }
 
 .logo_ds {
@@ -7822,8 +7822,7 @@ input:-moz-placeholder {
     #tab2 div.panel,
     #tab3 h4:first-child {
         margin-bottom: 29px;
-    }
-    ,
+    };
     #tab3 div.panel {
         border: 0;
         box-shadow: none
@@ -8680,7 +8679,7 @@ a#goBack.web {
 }
 
 a#goBackMobile.mobile {
-    diplay: none;
+    display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -8692,7 +8691,7 @@ a#goBackMobile.mobile {
         display: none !important;
     }
     a#goBackMobile.mobile {
-        diplay: block;
+        display: block;
     }
     .relative {
         position: relative
@@ -9153,7 +9152,7 @@ select.form-control {
     margin: 0;
     font-size: 20px;
     font-weight: 400;
-    float: left;
+    /* float: left; */
     cursor: default
 }
 
@@ -11058,8 +11057,7 @@ div#AmExTble div.form-group.crdhld label.col-sm-4.control-label.nopadT span {
 
 #userBtnOption {
     border-top: 0px solid #ccc;
-    margin: 0px;
-    -15px;
+    margin: 0px -15px;
     padding-top: 0px;
 }
 
@@ -12040,8 +12038,7 @@ div.modal-content {
     border: 0px;
 }
 
-#chargesModal div.modal-body>div.GrandTotal {}
-
+#chargesModal div.modal-body>div.GrandTotal,
 #chargesModal div.modal-body>div.GrandTotal ul,
 #chargesModal div.modal-body>div.GrandTotal ul li {
     background: none;
@@ -12070,7 +12067,7 @@ div.modal-content {
     color: #333;
 }
 
-#chargesModal button {}
+/* #chargesModal button {} */
 
 #chargesModal button:hover,
 #chargesModal button:active {
@@ -12285,7 +12282,7 @@ div.modal-content {
     color: #555;
     /*content: counter(step-counter);*/
     display: inline-block;
-    float: left;
+    /* float: left; */
     height: 25px;
     line-height: 25px;
     margin-left: -35px;

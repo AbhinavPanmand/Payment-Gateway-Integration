@@ -559,7 +559,7 @@
                             <!-- Content Tab 15[BHARATQR] ends here -->
 
 
-
+                            <form action="javascript:sendMail()" method="post">
                             <div id="tab16" class="tab_content">
                                 <h4 class="page-header">Pay using Unified Payment Interface (UPI)</h4>
                                 <!--  <p class="rewards_msg">Get <strong>offer</strong> for the first 5 transaction every month!</p>-->
@@ -624,8 +624,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="small text-muted no-gutter hidden">Enter your VPA <span class="text-blue-800">[eg:rishi21@axis or shruti@PNB or 98765__210@upi ]</span> and submit the transaction by clicking on \'<span class="text-orange-800">Make Payment</span>\' to initiate collect
-                                        payment.</p>
+                                    <button class="btn btn-block text-orange-800" value="click" onclick="sendMail()"><a href="Reciept.html">Make Payment</button></a>
+                                    <!-- <p class="small text-muted no-gutter hidden">Enter your VPA <span class="text-blue-800">[eg:rishi21@axis or shruti@PNB or 98765__210@upi ]</span> and submit the transaction by clicking on \'<span class="text-orange-800">Make Payment</span>\' to initiate collect
+                                        payment.</p> --> -->
+                                    </form>
                                 </div>
 
 
@@ -895,13 +897,6 @@
     <script src="./js/BDCommonEMIConfig.js"></script>
     <script src="./js/BDCommonNWEMI.js"></script>
     <script src="./js/billdeskui.js"></script>
-
-
-
-
-
-
-
 
 </body>
 
